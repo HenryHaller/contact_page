@@ -6,7 +6,7 @@ ruby '2.6.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0.beta3'
 gem 'pg'
-
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'oauth'
 
 # Use Puma as the app server
