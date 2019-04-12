@@ -8,6 +8,7 @@ gem 'rails', '~> 6.0.0.beta3'
 gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
 gem "http"
+gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
