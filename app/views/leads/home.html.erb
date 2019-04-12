@@ -1,0 +1,8 @@
+<%= simple_form_for(@lead, html: { class: 'form' }) do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :email %>
+  <%= f.input :company %>
+  <%= f.input :introduction %>
+  <%= f.button :submit, value: "Get in Touch" %>
+<% end %>

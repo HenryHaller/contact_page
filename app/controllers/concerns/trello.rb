@@ -8,11 +8,11 @@ TOKEN = ENV['TRELLO_TOKEN']
 module Trello
   extend ActiveSupport::Concern
   included do
-    def post_lead(first_name:, last_name:, email:, company:, introduction:)
-      name = company
-      desc = "#{introduction}\n#{first_name} #{last_name}\n#{email}"
+    def post_lead
+      name = @lead.company
+      desc = "#{@lead.introduction}\n#{@lead.first_name} #{@lead.last_name}\n#{@lead.email}"
       params = { key: KEY, token: TOKEN, idList: IDLIST, name: name, desc: desc }
-      HTTP.post('/1/cards?' + params.to_query)
+      HTTP.post('https://api.trello.com/1/cards?' + params.to_query)
     end
   end
 end
