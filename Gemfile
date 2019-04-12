@@ -7,8 +7,7 @@ ruby '2.6.0'
 gem 'rails', '~> 6.0.0.beta3'
 gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'oauth'
-
+gem "http"
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
