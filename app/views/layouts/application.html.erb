@@ -11,6 +11,16 @@
 
       <body>
         <div class="container-fluid">
+          <header>
+            <div class="title">
+              <h1>Chang An Marketing</h1>
+            </div>
+            <article class="text-center title-subtext">
+              <p>
+                We are specialists in East Asian Marketing. Let us assist your successful expansion into Asian Markets.
+              </p>
+            </article>
+          </header>
           <%= yield %>
         </div>
         <footer class="footer">
@@ -18,5 +28,13 @@
             Copyright 2019 Chang An Marketing
           </div>
         </footer>
+        <%#= cl_image_tag("BinBizNiz/trees", 
+          :folder => "BinBizNiz",
+          :width => 400,
+          :crop => "pad",
+          :cloud_name => "dd0hxnaz7",
+          :fetch_format=>:auto
+          )
+        %>
       </body>
     </html>
