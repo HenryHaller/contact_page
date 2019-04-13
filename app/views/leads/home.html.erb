@@ -6,7 +6,7 @@
      <%= f.input :last_name, required: true  %>
      <%= f.input :email, label: "Email", required: true, type: :email  %>
      <%= f.input :introduction, label: "How can we assist you?", required: true  %>
-     <%= f.button :submit, value: "Get in Touch", class: 'btn btn-primary submit-button', required: true  %>
+     <%= f.button :submit, value: "Get in Touch", class: 'btn btn-primary submit-button', required: true, data: { disable_with: false } %>
    <% end %>
   </div>
 </div>
