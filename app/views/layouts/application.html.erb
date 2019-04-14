@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Binbizniz</title>
+      <title><%= Settings.company_name %></title>
       <%= csrf_meta_tags %>
       <%= csp_meta_tag %>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,11 +13,11 @@
         <div class="container-fluid">
           <header>
             <div class="title">
-              <h1>Chang An Marketing</h1>
+              <h1><%= Settings.main_title %></h1>
             </div>
             <article class="text-center title-subtext">
               <p>
-                We are specialists in East Asian Marketing. Let us assist your successful expansion into Asian Markets.
+              <%= Settings.subtitle %>  
               </p>
             </article>
           </header>
@@ -25,16 +25,8 @@
         </div>
         <footer class="footer">
           <div class="text-center">
-            Copyright 2019 Chang An Marketing
+            Copyright <%= Time.now.year.to_s %> <%= Settings.company_name %> 
           </div>
         </footer>
-        <%#= cl_image_tag("BinBizNiz/trees", 
-          :folder => "BinBizNiz",
-          :width => 400,
-          :crop => "pad",
-          :cloud_name => "dd0hxnaz7",
-          :fetch_format=>:auto
-          )
-        %>
       </body>
     </html>

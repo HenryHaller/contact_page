@@ -9,6 +9,7 @@ gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
 gem "http"
 gem 'simple_form'
+gem 'config'
 # gem 'cloudinary'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'

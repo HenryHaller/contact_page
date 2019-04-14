@@ -8,7 +8,6 @@ class LeadsController < ApplicationController
     @lead = Lead.new(lead_params)
     if @lead.valid?
       r = post_lead
-      Rails.logger.warn(r.status.to_s)
       render :success
     else
       render :home
