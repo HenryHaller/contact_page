@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This is the unique identifier fo the list we want to append to
-IDLIST = Settings.id_list
+IDLIST = Settings.trello_list_id
 KEY = ENV['TRELLO_KEY']
 TOKEN = ENV['TRELLO_TOKEN']
 
